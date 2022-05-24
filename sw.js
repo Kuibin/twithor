@@ -16,7 +16,7 @@ const App_Shell = [
     'img/avatars/thor.jpg',
     'img/avatars/wolverine.jpg',
     'js/app.js',
-    '/js/sw-utils.js'
+    'js/sw-utils.js'
 ];
 
 const App_Shell_Inmutable = [
