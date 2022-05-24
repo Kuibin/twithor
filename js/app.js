@@ -1,6 +1,16 @@
 //despliegue sw
+
+var url = window.location.href;//obtiene el url
+var swLocation = '/twithor/sw.js';
+
 if (navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+
+    //verificamos si esta en local o en produccion
+    if (url.includes('localhost')){
+        swLocation = '/sw.js';
+    }
+
+    navigator.serviceWorker.register(swLocation);
 }
 
 
